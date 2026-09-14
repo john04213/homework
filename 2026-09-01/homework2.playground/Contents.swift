@@ -185,6 +185,8 @@ class PremiumBankAccount: BankAccount {
     let overdraftLimit: Double
     
     init(id:String, accountNumber: String, owner:String, initialBalance: Double = 0.0, overdraftLimit: Double ){
+        //Initialize local properties first
+        // and then initialize based class propertied
         self.overdraftLimit = overdraftLimit
         super.init(id: id
                    ,accountNumber: accountNumber
